@@ -1,4 +1,4 @@
-package com.github.savitoh;
+package com.github.savitoh.resource;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

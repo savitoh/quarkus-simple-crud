@@ -6,6 +6,11 @@ If you want to learn more about Quarkus, please visit its website: https://quark
 
 ## Running the application in dev mode
 
+Up the dev database container using:
+```
+docker run --network host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=teste -d rm mysql:8.0.19
+```
+
 You can run your application in dev mode that enables live coding using:
 ```
 ./mvnw quarkus:dev
