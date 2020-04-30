@@ -19,7 +19,7 @@ public class ProdutoResponsePayload {
     private LocalDateTime criacao;
 
     /**
-     * Utilizado apenas para fazer Serialização do JSON
+     * @deprecated(Utilizado apenas para fazer Serialização do JSON)
      */
     @Deprecated(since = "Desde Criação", forRemoval = false)
 	public ProdutoResponsePayload() {
