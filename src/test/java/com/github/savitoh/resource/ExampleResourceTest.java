@@ -1,4 +1,4 @@
-package com.github.savitoh;
+package com.github.savitoh.resource;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;

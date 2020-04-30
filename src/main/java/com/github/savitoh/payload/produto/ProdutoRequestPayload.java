@@ -9,10 +9,16 @@ public class ProdutoRequestPayload {
     private BigDecimal valor;
 
     /**
-     * Utilizado apenas para fazer desserialização do JSON
+     * @deprecated(usado apenas para fazer desserialização do JSON)
      */
     @Deprecated(since = "Desde Criação", forRemoval = false)
 	public ProdutoRequestPayload() {
+		//Default Constructor
+	}
+
+	public ProdutoRequestPayload(String nome, BigDecimal valor) {
+		this.nome = nome;
+		this.valor = valor;
 	}
 	
 	public void setNome(String nome) {

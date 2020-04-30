@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 import com.github.savitoh.payload.produto.ProdutoRequestPayload;
 
@@ -13,6 +14,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 @Entity
+@Table(name = "PRODUTOS")
 public class Produto extends PanacheEntity {
 
     public String nome;
@@ -26,7 +28,7 @@ public class Produto extends PanacheEntity {
     public LocalDateTime atualizacao;
 
     /**
-     * Usado apenas pelo Hibernate
+     * @deprecated(usado apenas pelo Hibernate)
      */
     @Deprecated(since = "always", forRemoval = false)
     public Produto() {
