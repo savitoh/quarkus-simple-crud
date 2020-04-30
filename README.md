@@ -1,19 +1,27 @@
-# quarkus-simple-crud project
+# quarkus-simple-crud
+
+[![Build status](https://travis-ci.org/savitoh/quarkus-simple-crud.svg?branch=master)](https://travis-ci.org/github/savitoh/quarkus-simple-crud)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.github.savitoh%3Aquarkus-simple-crud&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.savitoh%3Aquarkus-simple-crud)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.savitoh%3Aquarkus-simple-crud&metric=coverage)](https://sonarcloud.io/api/project_badges/measure?project=com.github.savitoh%3Aquarkus-simple-crud&metric=coverage)
+
+#### This project is analysed on [SonarCloud](https://sonarcloud.io/dashboard/index/com.sonarqube.examples:java-maven-travis-project)
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/> .
 
 ## Running the application in dev mode
 
 Up the dev database container using:
+
 ```
-docker run --network host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=teste -d rm mysql:8.0.19
+    docker run --network host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=teste -d rm mysql:8.0.19
 ```
 
 You can run your application in dev mode that enables live coding using:
+
 ```
-./mvnw quarkus:dev
+    ./mvnw quarkus:dev
 ```
 
 ## Packaging and running the application
@@ -32,4 +40,4 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 
 You can then execute your native executable with: `./target/quarkus-simple-crud-1.0.0-SNAPSHOT-runner`
 
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image.
+If you want to learn more about building native executables, please consult <https://quarkus.io/guides/building-native-image.>
