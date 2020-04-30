@@ -1,0 +1,23 @@
+anguage: java
+jdk:
+  - openjdk11
+stages:
+  - tests-sonar
+  - deploy
+  
+jobs:
+  include:
+  - stage: tests-sonar
+    addons:
+      sonarcloud:
+        organization: "savitoh"
+        toke: 
+            secure: $SONAR_TOKEN
+    before_script: cd quarkus-simple-crud
+    script:
+      - mvn clean install sonar:sonar
+  - stage: deploy
+    script: echo "Deploying... (noop)"
+    
+notifications:
+  email: true
